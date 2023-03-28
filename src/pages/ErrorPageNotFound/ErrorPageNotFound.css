@@ -1,0 +1,29 @@
+.error_page {
+    color: #ff6060;
+    text-align: center;
+}
+
+.error_page h1 {
+    font-size: 288px;
+    margin-bottom: 0.5em;
+}
+
+.error_page h2 {
+    font-size: 36px;
+    font-weight: 400;
+}
+
+.error_page a {
+    color: #ff6060;
+}
+
+@media screen and (width <= 740px){
+    .error_page h1 {
+        font-size: 200px;
+    }
+
+    .error_page h2 {
+        font-size: 20px;
+        font-weight: 400;
+    }
+}

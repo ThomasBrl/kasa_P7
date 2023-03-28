@@ -1,0 +1,42 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 1rem 3rem;
+    gap: 2rem;
+    color: #ff6060;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.navbar_logo {
+    margin-right: auto;
+}
+
+.navabr a.active {
+    text-decoration: underline;
+    text-decoration: #ff6060;
+}
+
+.navbar a {
+    color: #ff6060;
+    text-decoration: none;
+    position: relative;
+}
+
+a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ff6060;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
